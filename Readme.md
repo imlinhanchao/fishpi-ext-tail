@@ -2,7 +2,7 @@
   <img width="200" src="./public/icon.png">
 </p>
 
-小冰游戏是一款摸鱼文字修仙游戏。这是 [摸鱼派客户端](https://github.com/imlinhanchao/fishpi-desktop) 小冰游戏扩展。
+这是 [摸鱼派客户端](https://github.com/imlinhanchao/fishpi-desktop) 小尾巴扩展，可以在聊天室中自动加发言小尾巴。
 
 ## 安装方式
 
