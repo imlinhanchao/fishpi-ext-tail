@@ -5,6 +5,7 @@
     <p><textarea placeholder="设置你的小尾巴" rows="5" v-model="setting.tails"></textarea></p>
     <p class="form-flex"><label for="exclude_tail">除非包含</label><input class="form-input" type="text" placeholder="设置不要添加小尾巴的消息正则" v-model="setting.exclude" id="exclude_tail"/></p>
     <p><button @click="save">设置</button></p>
+    <p>{{error}}</p>
   </div>
 </template>
 
@@ -21,7 +22,8 @@ export default {
         addTail: true,
         tails: "—— 已经水了 {{liveness}}% 了！",
         exclude: "^(凌|小冰|点歌|朗读)",
-      }
+      },
+      error: ''
     }
   },
   computed: {
@@ -35,6 +37,8 @@ export default {
     save() {
       // eslint-disable-next-line no-undef
       $ipc.send('fishpi.set.setting', this.setting);
+      this.error = '设置成功';
+      setTimeout(() => this.error = '', 2000);
     }
   }
 }

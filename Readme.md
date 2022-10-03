@@ -6,12 +6,12 @@
 
 ## 安装方式
 
-1. 下载 [Release](https://github.com/imlinhanchao/fishpi-ext-xiaoice/releases) 最新版本的压缩包。
+1. 下载 [Release](https://github.com/imlinhanchao/fishpi-ext-tail/releases) 最新版本的压缩包。
 2. 解压缩到客户端扩展目录。
 3. 重新开启客户端即可。
 
 ## 功能说明
-扩展会读取登录用户信息，用于作为小冰游戏的登录账号。输入密码即可开始游戏，若没有玩过小冰游戏，会自动创建小冰游戏账号。
+可以设置过滤聊天室的小尾巴和设置自己发送的小尾巴，可以进入扩展页面点击扩展的设置按钮进行设置。
 
 ## 调试说明
 1. 首先，将代码 clone 到扩展目录，运行 `npm run serve`，启动 vue 服务。
@@ -23,4 +23,4 @@
 # MacOS
 fishpi.app/Contents/MacOS/fishpi --dev
 ```
-3. 点击侧边栏图标进入启动扩展。即可启动对扩展 `webview` 调试。
+1. 点击扩展界面的扩展设置按钮。即可启动对扩展 `webview` 调试。
