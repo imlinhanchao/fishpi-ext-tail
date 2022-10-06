@@ -58,7 +58,7 @@ function hooks() {
             return msg;
         },
         async sendMsgEvent(text) {
-            if (settings.addTail && !text.match(new RegExp(setting.exclude))) {
+            if (settings.addTail && !text.match(new RegExp(settings.exclude))) {
                 text = text + `\n\n\n>` + settings.tails.replace(/{{liveness}}/g, liveness);
             }
             return text;
